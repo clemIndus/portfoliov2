@@ -2,13 +2,12 @@
 title: HAProxy sous Debian 10
 publishDate: 2019-10-02 00:00:00
 img: /assets/HAproxy.png
-img_alt: Soft pink and baby blue water ripples together in a subtle texture.
-description: |
-  HAProxy sous Debian 10
+img_alt: Haproxy
+description: HAProxy sous Debian 10
 tags:
  - Disponibilité
 ---
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <h2> Présentation </h2>
 <p>
 HAProxy est un service de répartition d’un ensemble de tâches sur un ensemble de ressources, dans le but d’en rendre le traitement global plus efficace. Par exemple, cela permet de répartir la charge d’un seul applicatif http sur plusieurs serveurs http tout en étant transparent pour le client. En cas de défaillance de l’un, l’autre prendra entièrement la charge sur lui. On parle de Haute Disponibilité.
