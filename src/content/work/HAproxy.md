@@ -75,7 +75,6 @@ Ce type d'infrastructure est également très bénéfique pour le déploiement l
 <h2>
 Préalable réseau et installation
 </h2>
-<section>
   <h3>
   Configuration du réseau sur Virtual Box
   </h3>
@@ -125,8 +124,6 @@ Préalable réseau et installation
     <div class="bg-gray-700 h-full px-4 py-2 text-black whitespace-nowrap">$</div>
     <code class="px-2 whitespace-nowrap overflow-x-auto"><strong>haproxy -v</strong></code>
   </div>
-</section> 
-<section>
 <h2>Configuration de HAProxy</h2>
 <p>Le service ne démarre pas car il faut obligatoirement renseigner la configuration. Le fichier de configuration principal se trouve dans /etc/haproxy/haproxy.cfg. Il se décompose en 4 sections :</p>
 <br></br>
@@ -364,4 +361,3 @@ Nous allons utiliser Apache2 pour nos deux serveurs web, en leur attribuant les 
 <br></br>
 <p>HAProxy alterne bien entre nos deux serveurs web lorsque nous rafraîchissons la page.</p>
 </div>
-</section>
