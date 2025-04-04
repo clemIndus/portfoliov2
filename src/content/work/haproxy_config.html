@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configuration HAProxy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      margin: 2rem;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    pre {
+      background: #2d2d2d;
+      color: #f8f8f2;
+      padding: 1rem;
+      overflow-x: auto;
+      border-radius: 8px;
+    }
+    code {
+      font-family: 'Courier New', Courier, monospace;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Configuration de HAProxy</h1>
+
+  <div class="section">
+    <h2>Installation</h2>
+    <pre><code>sudo apt install haproxy</code></pre>
+  </div>
+
+  <div class="section">
+    <h2>Fichier de configuration : /etc/haproxy/haproxy.cfg</h2>
+    <p>Contenu :</p>
+    <pre><code>global
+    log /dev/log local0
+    log /dev/log local1 notice
+    daemon
+
+defaults
+    log global
+    mode http
+    option httplog
+    option dontlognull
+    timeout connect 5000
+    timeout client  50000
+    timeout server  50000
+
+frontend http_front
+    bind *:80
+    default_backend http_back
+
+backend http_back
+    balance roundrobin
+    server web1 192.168.1.10:80 check
+    server web2 192.168.1.11:80 check</code></pre>
+  </div>
+
+  <div class="section">
+    <h2>Commandes utiles</h2>
+    <ul>
+      <li><code>sudo systemctl restart haproxy</code> : redémarrer HAProxy</li>
+      <li><code>sudo systemctl status haproxy</code> : statut de HAProxy</li>
+      <li><code>haproxy -c -f /etc/haproxy/haproxy.cfg</code> : vérifier la config</li>
+    </ul>
+  </div>
+
+</body>
+</html>

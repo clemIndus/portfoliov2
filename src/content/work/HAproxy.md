@@ -84,7 +84,7 @@ Préalable réseau et installation
   On va ajouter une 2ème carte réseau au serveur HAProxy qui sera dans le réseau interne backend, on fera de même pour les serveurs webs. Comme ceci : 
   </p>
   <br></br>
-  <img src="/public/assets/photo_1-HAproxy.jpg" alt="Configuration réseau VBox" width="804" height="578" loading="lazy" decoding="async">
+  <img src="/assets/photo_1-HAproxy.jpg" alt="Configuration réseau VBox" width="804" height="578" loading="lazy" decoding="async">
   <br></br>
   <p>
   Afin d'établir l'infrastructure du réseau, deux cartes réseau sont nécessaires pour le serveur HAProxy, étant donné que nous prévoyons de séparer notre infrastructure entre le frontend qui se verra attribuer l'adresse <em>172.16.200.10 </em> et le backend qui se verra attribuer l'adresse <em>10.0.0.1</em> Nous allons installer une seconde carte réseau.
