@@ -146,7 +146,7 @@ Préalable réseau et installation
   </p>
   <br></br>
   <p>
-  <em>Backedn</em>
+  <em>Backend</em>
   Une section backend définit un groupe de serveurs chargés de traiter les requêtes en répartissant la charge. Chaque backend reçoit une étiquette personnalisée, comme web_servers, pour l'identifier. Cette configuration reste généralement simple, nécessitant peu de paramètres dans la plupart des cas.
   </p>
 </div>
@@ -321,7 +321,7 @@ Il est courant d'utiliser les options ssl et crt avec bind pour gérer la termin
 Nous allons utiliser Apache2 pour nos deux serveurs web, en leur attribuant les adresses IP suivantes : 10.10.10.2 et 10.10.10.3. Il sera essentiel de vérifier qu’ils sont bien connectés au réseau interne backend sur VirtualBox, en procédant comme suit :
 </p>
 <br></br>
-<img src="/public/assets/phot2-haproxy.jpg" alt="Configuration réseau VBox" width="804" height="578" loading="lazy" decoding="async">
+<img src="/assets/phot2-haproxy.jpg" alt="Configuration réseau VBox" width="804" height="578" loading="lazy" decoding="async">
 <br></br>
 <p>Nous allons modifier les fichiers index.html différemment sur chaque serveur afin de bien démontrer l’alternance entre eux. Bien sûr, dans un environnement de production, nos serveurs web devraient pointer vers la même ressource.</p>
 <br></br>
@@ -354,9 +354,9 @@ Nous allons utiliser Apache2 pour nos deux serveurs web, en leur attribuant les 
 <br></br>
 <p>On peut alors tester avec le client web l’adresse de notre frontend qui est <em>172.16.200.10</em> :</p>
 <br></br>
-<p><img src="/public/assets/backend1.webp" alt="backend1" width="538" height="151" loading="lazy" decoding="async">
+<p><img src="/assets/backend1.webp" alt="backend1" width="538" height="151" loading="lazy" decoding="async">
 <br></br>
-<img src="/public/assets/backend2.webp" alt="backend2" width="535" height="150" loading="lazy" decoding="async"></p>
+<img src="/assets/backend2.webp" alt="backend2" width="535" height="150" loading="lazy" decoding="async"></p>
 <br></br>
 <p>HAProxy alterne bien entre nos deux serveurs web lorsque nous rafraîchissons la page.</p>
 </div>

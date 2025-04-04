@@ -11,7 +11,7 @@ tags:
 
 <h5>J’ai eu la chance de réaliser mon alternance au sein des Chantiers de l’Atlantique, un environnement prestigieux et dynamique, via mon employeur prestataire Consort Group.</h5>
 
-<img src="/public/assets/consort.jpg" alt="CONSORT-GROUP" width="300" height="200">
+<img src="/assets/consort.jpg" alt="CONSORT-GROUP" width="300" height="200">
 
 <h5>Dans le cadre de mes missions, j’ai pu m’investir dans diverses activités enrichissantes </h5>
 
